@@ -1,0 +1,37 @@
+.events-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .events-container h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .events-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  a {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin: 5px; /* Adds spacing between items */
+  }
+  
+  .logo {
+    width: 50px;
+    margin-right: 10px;
+  }

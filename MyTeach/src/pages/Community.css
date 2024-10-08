@@ -1,0 +1,59 @@
+/* src/pages/Community.css */
+.community-container {
+    text-align: center;
+    padding: 20px;
+    padding-top: 60px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 50px;
+  }
+  
+  .community-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .community-section {
+    background-color: #f9f9f9;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .community-section img {
+    width: 130px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .community-section a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .community-section:hover {
+    transform: scale(1.05);
+  }
+  
+  .community-section:hover a {
+    color: #0073e6;
+  }
+  
+  @media (max-width: 768px) {
+    .community-sections {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

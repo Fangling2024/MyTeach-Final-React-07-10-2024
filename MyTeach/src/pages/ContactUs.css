@@ -1,0 +1,91 @@
+.contact-container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #f8f1f1;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start; /* Align items at the top */
+}
+
+.box {
+  padding: 20px;
+  border: 2px solid #007BFF; /* Blue outline */
+  border-radius: 8px;
+  background-color: #bdce7a;
+  flex-basis: 48%; /* Adjust the basis as per your design needs */
+  margin: 10px;
+  display: flex;
+  flex-direction: column; /* Vertical layout for the items inside */
+}
+
+.location-social {
+  display: flex;
+  flex-direction: column; /* Vertical arrangement */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-around; /* Space out the location and social media */
+}
+
+.location, .social-media {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center align the items */
+  margin: 10px 0; /* Spacing between location and social media */
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  margin: 5px 0; /* Reduce spacing between links for vertical layout */
+  color: #007BFF; /* Unified color for links */
+}
+
+.icon {
+  width: 40px; /* Slightly smaller icons */
+  height: 40px; /* Slightly smaller icons */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.submission-message {
+  color: green;
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 100px;
+  background-color: rgb(11, 58, 11);
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}

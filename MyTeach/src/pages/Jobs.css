@@ -1,0 +1,55 @@
+
+  /* Jobs.css - Styling for Job Search Websites Page */
+.job-container {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1200px; /* Consistent width with other site sections */
+    background: #f4f4f4; /* Mild background color for the whole container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  }
+  
+  .jobs-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three columns on larger screens */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .job {
+    background: #ffffff; /* White background for each job entry */
+    border: 1px solid #e1e4e8; /* Light grey border for a subtle outline */
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth transformation on hover */
+  }
+  
+  .job:hover {
+    transform: scale(1.05); /* Slight enlargement on hover for interactivity */
+  }
+  
+  .logo {
+    width: 100%;
+    max-height: 100px; /* Ensuring logos are uniformly sized */
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .name {
+    font-size: 18px; /* Suitable font size for readability */
+    color: #333; /* Dark grey color for text for better visibility */
+    font-weight: bold;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px; /* Slightly larger font size for the main title */
+    padding: 20px 0;
+    font-family: Arial, sans-serif; /* Specifying a font family if needed */
+  }
+  
+  @media (max-width: 768px) {
+    .jobs-list {
+      grid-template-columns: 1fr; /* Stacking the job boxes on smaller screens */
+    }
+  }

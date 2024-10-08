@@ -1,0 +1,53 @@
+/* SignIn.css */
+.signin-container {
+    background: rgb(56, 95, 69);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    margin: 100px auto;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    width: auto; /* Reset width for checkboxes */
+    margin-top: 0; /* Align properly with the label */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.checkbox label {
+    display: block;
+    font-size: 14px;
+}

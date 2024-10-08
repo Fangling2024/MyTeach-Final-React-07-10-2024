@@ -1,0 +1,70 @@
+/* Home.css */
+
+/* General layout styling */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Title styling */
+h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Responsive grid layout for the sections */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+  grid-gap: 20px; /* Spacing between grid items */
+  margin-top: 70px; /* Adding space between title and grid */
+}
+
+/* Section styling */
+.section {
+  padding: 2px;
+  border-radius: 2px;
+  color: rgba(9, 9, 9, 0.024)#2260c3;
+  min-height: 150px;
+}
+
+/* Specific colors for different sections */
+.my-posts { background-color: #ff9a8b; }
+.network-posts { background-color: #ff6a88; }
+.my-training { background-color: #f694c1; }
+.my-community { background-color: #ffcc80; }
+.my-events { background-color: #81c784; }
+.my-jobs { background-color: #64b5f6; }
+.my-progress {
+  background-color: #ba68c8;
+  grid-column: span 3; /* Make "My Progress" span across all 3 columns */
+}
+
+/* Content box for holding the placeholder content */
+.content-box {
+  background-color: #fff;
+  padding: 10px; /* Narrowed padding to reduce the outline */
+  border-radius: 3px; /* Reduced border radius for a sharper look */
+  color: #555;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .grid-layout {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-layout {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+}
